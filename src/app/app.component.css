@@ -1,0 +1,30 @@
+menu {
+    width: 100%;
+    background: #162238;
+    position: absolute;
+}
+
+menu-mobile {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    transform: translateY(-100%);
+    transition: all .25s ease-out 0s;
+    opacity: 0;
+}
+
+menu-mobile.active {
+    background: #162238;
+    transition-timing-function: ease-out;
+    transform: translateY(0);
+    transition: all .25s ease 0s;
+    box-shadow: 0.125rem 0.125rem 0.3215rem 0 rgba(35,35,35,.3);
+    opacity:1;
+}
+
+@media (min-width: 941px){
+    menu-mobile {
+        display: none;
+    }
+}

@@ -1,0 +1,18 @@
+<div class="container" (clickOutside)="onClickedOutside()">
+    <div class="logo"><logo></logo></div>
+    <nav class="navbar">
+        <ul class="navbar_ul">
+            <li><a href="#">Home</a></li>
+            <li *ngFor="let sub of navbarList; index as i">
+                <a href="#" (click)="subClick(i)" class="navbar_a" [ngClass]="toggle == i ? 'open' : ''">{{sub.name}}</a>
+                <div class="submenu" [ngClass]="toggle == i ? 'active' : ''">
+                    <img src="{{sub.img}}" alt="">
+                    <ul class="submenu_ul">
+                        <li *ngFor="let con of sub.content"><a href="#">{{con}}</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <toggle (click)="toggleMobile(true)"></toggle>
+</div>

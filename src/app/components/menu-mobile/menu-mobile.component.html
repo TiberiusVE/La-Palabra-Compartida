@@ -1,0 +1,17 @@
+<div class="menu_mobile">
+    <nav class="navbar_mobile">
+        <ul class="navbar_ul_mobile">
+            <li><a href="#">Home</a></li>
+            <li *ngFor="let sub of navbarList; index as i"><a href="#" (click)="openSub(i)" class="navbar_a_mobile" [ngClass]="toggle == i ? 'open' : ''">{{sub.name}}</a>
+                <ul class="subnavbar_ul_mobile" [ngClass]="toggle == i ? 'active' : ''">
+                    <li *ngFor="let con of sub.content"><a href="#">{{con}}</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</div>
+<div class="icons">
+    <a href="//www.instagram.com/lapalabracompartida/"><i class="fab fa-instagram"></i></a>
+    <a href="//www.youtube.com/channel/UCMRZygGNiifrdYjdK6aHv_Q?view_as=subscriber"><i class="fab fa-youtube"></i></a>
+    <a href="//twitter.com/LPCompartida"><i class="fab fa-twitter"></i></a>
+</div>

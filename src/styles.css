@@ -1,1 +1,49 @@
 /* You can add global styles to this file, and also import other style files */
+
+@font-face {
+    font-family: 'lebeaune';
+    src: local('lebeaune'), url(assets/fonts/LeBeauneNew.otf) format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'calluna';
+    src: local('calluna'), url(assets/fonts/Calluna-Regular.otf) format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'calluna-light';
+    src: local('calluna-light'), url(assets/fonts/Calluna-Light.otf) format('opentype');
+  }
+  
+*, html, body {
+    padding: 0;
+    margin:0;
+}
+
+.container{
+    margin: 0 auto;
+    width: 85%;
+}
+
+logo svg {
+  width: 130px;
+  padding: 2.5% 0;
+}
+
+@media (min-width: 768px){}
+
+@media (min-width: 941px){
+  .container{
+    width: 90%;
+  }
+  logo svg {
+    width: 140px;
+    padding: 5% 0;
+  }
+}
+
+@media (min-width: 1200px){
+  .container{
+    width: 75rem;
+  }
+}
