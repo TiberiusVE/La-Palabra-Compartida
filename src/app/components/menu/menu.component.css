@@ -133,3 +133,28 @@ logo{
         width: 35%;
     }
 }
+
+/* Toggle Button */
+
+.fa-bars, .fa-times{
+    color: #fff;
+    font-size: 1.75rem;
+}
+
+.fa-times{
+    font-size: 2rem;
+}
+
+.fa-bars, .fa-times{
+    display: none;
+}
+
+.fa-bars.active, .fa-times.active{
+    display: block;
+}
+
+@media (min-width:941px){
+    .toggle_button{
+        display: none;
+    }
+}

@@ -8,7 +8,6 @@ import { Menu } from './components/menu/menu.component';
 import { Header } from './components/header/header.component';
 import { Article } from './components/article/article.component';
 import { Logo } from './components/logo/logo.component';
-import { Toggle } from './components/toggle/toggle.component';
 import { MenuMobile } from './components/menu-mobile/menu-mobile.component';
 
 @NgModule({
@@ -18,7 +17,6 @@ import { MenuMobile } from './components/menu-mobile/menu-mobile.component';
     Header,
     Article,
     Logo,
-    Toggle,
     MenuMobile
   ],
   imports: [

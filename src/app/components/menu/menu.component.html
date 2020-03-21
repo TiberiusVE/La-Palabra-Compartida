@@ -14,5 +14,8 @@
             </li>
         </ul>
     </nav>
-    <toggle (click)="toggleMobile(true)"></toggle>
+    <div (click)="toggleMobile(true)" class="toggle_button">
+        <i class="far fa-bars" [class.active]="!switch"></i>
+        <i class="fal fa-times" [class.active]="switch"></i>
+    </div>
 </div>

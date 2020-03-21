@@ -8,6 +8,7 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 export class Menu {
   public toggle: number;
+  public switch: boolean;
   @Input() navbarList: Array<any>;
   @Output() openMobile = new EventEmitter
 
@@ -23,6 +24,7 @@ export class Menu {
 
   toggleMobile(v){ 
     this.openMobile.emit(v)
+    this.switch = this.switch !== v ? v : !v;
   }
 
 }
