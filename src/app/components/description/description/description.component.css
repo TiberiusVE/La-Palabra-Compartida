@@ -1,0 +1,36 @@
+section.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: url(https://www.winchestercollege.org/assets/img/bg-chevrons.svg) no-repeat;
+    background-position: center 115px;
+    height: 50vh;
+    padding: 0 2rem;
+}
+
+section.description h4 {
+    letter-spacing: .25em;
+    font-family: 'lebeaune';
+    font-size: .875rem;
+    font-weight: 100;
+    color: #999;
+}
+
+section.description h1 {
+    font-family: 'lebeaune';
+    font-weight: 100;
+    font-size: 2.8125rem;
+    margin-top: 2rem;
+}
+
+@media (max-width:767px){
+    section.description h1 {
+        font-size: 1.5625rem;
+    }
+}
+
+section.description p {
+    margin-top: 2rem;
+}

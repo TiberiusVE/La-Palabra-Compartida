@@ -1,0 +1,12 @@
+<section class="box-container" fxLayout="column" >
+    <div class="content-container" fxLayout="column" fxLayoutAlign="stretch" fxFlex="auto">
+        <swiper class="swiper-container" [config]="config">
+          <div *ngFor="let slide of slides" class="swiper-slide" style="background:url('{{slide.imagen}}')">
+            <div class="slide-text" fxLayout="column" fxFlexFill>
+              <h4>{{slide.pretitle}}</h4>
+              <h1>{{slide.title}}</h1>
+            </div>
+          </div>
+        </swiper>
+      </div>
+</section>

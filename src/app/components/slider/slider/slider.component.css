@@ -1,0 +1,54 @@
+.box-container {
+    padding: 0 2rem 0 20rem;
+    height: 70vh;
+    margin-bottom: 3rem;
+}
+
+.content-container {
+    position: relative;
+    overflow: hidden;
+    height: inherit;    
+}
+
+.swiper-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.swiper-slide {
+    background-size: cover !important;
+    /* cursor: pointer; */
+}
+
+.slide-text {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background: rgba(0,0,0,0.25);
+    font-family: 'lebeaune';
+    transition: 0.25s;
+}
+
+.slide-text:hover {
+    background: rgba(22, 34, 56, 0.75);
+    transition: 0.25s;
+}
+
+.slide-text h4 {
+    font-size: .6875rem;
+    letter-spacing: .25em;
+    text-transform: uppercase;
+}
+
+.slide-text h1 {
+    font-size: 1.75rem;
+    line-height: 1.5;
+    margin-top: 1rem;
+}
+

@@ -1,2 +1,13 @@
 <menu (openMobile)="mobileMenu($event)" [navbarList]="navbarList"></menu>
-<menu-mobile [ngClass]="openMobile == true ? 'active' : ''" [navbarList]="navbarList"></menu-mobile>
+<menu-mobile 
+    [ngClass]="openMobile == true ? 'active' : ''" 
+    [navbarList]="navbarList" 
+></menu-mobile>
+<app-header></app-header>
+<app-description [props]="{ 
+    pretitle: 'Explora con nosotros', 
+    title: 'La Nación Intelectual', 
+    postitle: 'So much of what makes Winchester exceptional is the people who are a part of the school'}"
+></app-description>
+<app-slider></app-slider>
+<app-podcast></app-podcast>

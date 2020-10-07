@@ -47,3 +47,9 @@ logo svg {
     width: 75rem;
   }
 }
+
+p {
+  font-family: 'calluna-light';
+  font-size: 1.0625rem;
+  line-height: 1.7647;
+}

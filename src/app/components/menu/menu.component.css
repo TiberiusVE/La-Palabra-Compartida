@@ -18,12 +18,18 @@ logo{
 /* Navbar */
 
 .navbar{
-    flex: 2 1;
+    flex: 3 1;
 }
 
 @media (max-width: 940px){
     .navbar {
         display: none;
+    }
+}
+
+@media (min-width: 1200px){
+    .navbar{
+        flex: 2 1;
     }
 }
 
@@ -83,7 +89,7 @@ logo{
 
 .submenu.active{
     transition-timing-function: ease-out;
-    transform: translate(-50%, 78px);
+    transform: translate(-50%, 72px);
     transition: all .75s ease 0s;
     background: #fff;
     box-shadow: 0.125rem 0.125rem 0.3125rem 0 rgba(35,35,35,.3);

@@ -1,0 +1,6 @@
+section.podcast {
+    height: 75vh;
+    display: flex;
+    margin: 4rem 0 0 0;
+    background:#162238;
+}
